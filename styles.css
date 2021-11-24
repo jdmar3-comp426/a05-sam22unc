@@ -1,0 +1,46 @@
+body {
+    background-color: #99badd;
+    color: black;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+nav, div.header, div.footer {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.125em;
+    margin: 0 0 20px 0;
+    /* padding: 20px 0 0 0; */
+}
+div.main-image {
+    font-size: 1.125em;
+    display: flex;
+    justify-content: center;
+}
+
+#title{
+    width: 500px;
+    height: 500px;
+}
+#title:hover {
+    width: 100%;
+}
+
+li>a{
+    font-family: cursive;
+}
+
+.header{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+div>h4 {
+    color: white;
+}
+
+ol>li {
+    color: rgb(230, 185, 207);
+}
+
+div h5 {
+    color: blue;
+}

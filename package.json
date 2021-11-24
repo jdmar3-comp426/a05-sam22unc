@@ -4,23 +4,18 @@
   "description": "making a form talk to an API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jdmar3-comp426/a05-sam22unc.git"
+    "client": "npx browser-sync start -sw",
+    "server": "node server.js",
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\""
   },
   "author": "Samantha H. Anthony",
-  "license": "CC-BY-NC-SA-4.0",
-  "bugs": {
-    "url": "https://github.com/jdmar3-comp426/a05-sam22unc/issues"
-  },
-  "homepage": "https://github.com/jdmar3-comp426/a05-sam22unc#readme",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "better-sqlite3": "^7.4.5",
     "browser-sync": "^2.27.7",
     "concurrently": "^6.4.0",
     "express": "^4.17.1",
-    "md5": "^2.3.0"
+    "md5": "^2.3.0",
+    "require": "^2.4.20"
   }
 }
