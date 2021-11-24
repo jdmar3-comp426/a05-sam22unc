@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
     function sendData() {
         const sendRequest = new XMLHttpRequest();
-        const signupInfo = new FormData( form );
+        const signupInfo = new URLSearchParams(new FormData( form ));
         sendRequest.addEventListener("error", function(event){
             alert('Submission unsuccessful! Please try again.');
         });
@@ -15,5 +15,5 @@ window.addEventListener("load", function () {
     form.addEventListener("submit", function(event){
         event.preventDefault();
         sendData();
-    })
-})
+    });
+});
